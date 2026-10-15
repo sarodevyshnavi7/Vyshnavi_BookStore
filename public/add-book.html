@@ -1,0 +1,148 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Add a Book | Vyshnavi Books &amp; Beyond</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@500;600;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="css/style.css">
+  <script src="js/script.js" defer></script>
+</head>
+
+<body>
+<header class="site-header">
+  <a class="brand" href="index.html">
+    <span class="brand-name">Vyshnavi</span>
+    <span class="brand-subtitle">BOOKS &amp; BEYOND</span>
+  </a>
+
+  <button class="menu-toggle" aria-label="Toggle navigation">☰</button>
+
+  <nav class="main-nav">
+    <a href="index.html">Home</a>
+    <a href="books.html">Books</a>
+    <a href="add-book.html">Add Book</a>
+    <a href="update-book.html">Update</a>
+    <a href="delete-book.html">Delete</a>
+    <a href="about.html">About Us</a>
+    <a href="contact.html">Contact</a>
+  </nav>
+</header>
+
+<main>
+  <section class="page-hero">
+    <p class="eyebrow">GROW OUR LIBRARY</p>
+    <h1>Add a new book.</h1>
+    <p>Every book has a story. Make room for one more.</p>
+  </section>
+
+  <section class="form-section">
+    <form class="form-card" id="addBookForm">
+
+      <div class="form-heading">
+        <span class="form-icon">✦</span>
+        <div>
+          <h2>Book details</h2>
+          <p>Fill in the information below.</p>
+        </div>
+      </div>
+
+      <label for="book_id">Book ID</label>
+      <input
+        id="book_id"
+        name="book_id"
+        type="number"
+        min="1"
+        step="1"
+        placeholder="Enter a unique Book ID"
+        required
+      >
+
+      <label for="title">Book title</label>
+      <input id="title" name="title" type="text" required>
+
+      <label for="author">Author</label>
+      <input id="author" name="author" type="text" required>
+
+      <label for="category">Category</label>
+      <input
+        id="category"
+        name="category"
+        type="text"
+        required
+        placeholder="Fiction, Finance, Programming"
+      >
+
+      <div class="form-row">
+        <div>
+          <label for="price">Price (₹)</label>
+          <input
+            id="price"
+            name="price"
+            type="number"
+            min="0"
+            step="0.01"
+            required
+          >
+        </div>
+
+        <div>
+          <label for="stock">Copies in stock</label>
+          <input
+            id="stock"
+            name="stock"
+            type="number"
+            min="0"
+            step="1"
+            required
+          >
+        </div>
+      </div>
+
+      <button type="submit" class="btn btn-primary form-submit">
+        Add book ↗
+      </button>
+
+      <p class="form-message" id="addBookMessage" aria-live="polite"></p>
+
+    </form>
+  </section>
+<section class="management-feature add-feature">
+  <div class="management-feature-copy">
+    <p class="eyebrow">MAKE ROOM FOR ANOTHER STORY</p>
+    <h2>Every new book adds a new possibility.</h2>
+    <p>Add the book's unique ID, title, author, category, price and available copies. Use a Book ID that is not already in the database, then open the Books page to see the updated collection.</p>
+    <div class="management-points"><span>✦ Unique Book ID</span><span>✦ Complete book details</span><span>✦ Easy catalogue updates</span></div>
+    <a class="btn btn-primary" href="books.html">See the collection ↗</a>
+  </div>
+  <div class="management-image-collage add-collage">
+    <img class="management-image-large" src="https://images.unsplash.com/photo-1509062522246-3755977927d7?auto=format&fit=crop&w=1000&q=85" alt="A selection of books ready for the shelves" loading="lazy">
+    <img class="management-image-small" src="https://images.unsplash.com/photo-1494438639946-1ebd1d20bf85?auto=format&fit=crop&w=700&q=85" alt="Books stacked together" loading="lazy">
+    <span class="image-note">A new title, a new adventure ✨</span>
+  </div>
+</section>
+</main>
+
+<footer class="site-footer">
+  <div>
+    <a class="brand footer-brand" href="index.html">
+      <span class="brand-name">Vyshnavi</span>
+      <span class="brand-subtitle">BOOKS &amp; BEYOND</span>
+    </a>
+    <p>A little world made of words.</p>
+  </div>
+
+  <div class="footer-links">
+    <a href="books.html">Browse Books</a>
+    <a href="about.html">About Us</a>
+    <a href="contact.html">Contact</a>
+  </div>
+
+  <p class="copyright">© 2026 Vyshnavi Books &amp; Beyond</p>
+</footer>
+</body>
+</html>

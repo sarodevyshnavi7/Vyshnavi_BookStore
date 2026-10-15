@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Delete a Book | Vyshnavi Books & Beyond</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+  <script src="js/script.js" defer></script>
+</head>
+<body>
+<header class="site-header">
+  <a class="brand" href="index.html"><span class="brand-name">Vyshnavi</span><span class="brand-subtitle">BOOKS &amp; BEYOND</span></a>
+  <button class="menu-toggle" aria-label="Toggle navigation">☰</button>
+  <nav class="main-nav">
+    <a href="index.html">Home</a><a href="books.html">Books</a><a href="add-book.html">Add Book</a>
+    <a href="update-book.html">Update</a><a href="delete-book.html">Delete</a><a href="about.html">About Us</a><a href="contact.html">Contact</a>
+  </nav>
+</header>
+<main>
+
+<section class="page-hero"><p class="eyebrow">MANAGE YOUR COLLECTION</p><h1>Remove a book.</h1><p>Delete a record by its Book ID.</p></section>
+<section class="form-section"><form class="form-card" id="deleteBookForm"><div class="form-heading"><span class="form-icon">⌫</span><div><h2>Remove from shelf</h2><p>Check the ID carefully before deleting.</p></div></div>
+<label>Book ID</label><input name="book_id" type="number" min="1" required placeholder="Enter Book ID"><button class="btn btn-danger form-submit">Delete book ×</button><p id="deleteBookMessage" class="form-message"></p></form></section>
+
+<section class="management-feature delete-feature">
+  <div class="management-feature-copy">
+    <p class="eyebrow">A CAREFUL CATALOGUE CLEAN-UP</p>
+    <h2>Remove only the record you no longer need.</h2>
+    <p>Before deleting, visit the Books page and confirm the Book ID. Deleting a record removes it from the catalogue, so double-check the number and keep any details you may need later.</p>
+    <div class="delete-reminder"><span class="reminder-icon">!</span><div><strong>Take a moment to verify.</strong><p>Make sure the ID belongs to the intended book. The website asks for confirmation before sending the delete request.</p></div></div>
+    <a class="btn btn-outline" href="books.html">Check book IDs first →</a>
+  </div>
+  <div class="management-image-collage delete-collage">
+    <img class="management-image-large" src="https://images.unsplash.com/photo-1497366811353-6870744d04b2?auto=format&fit=crop&w=1000&q=85" alt="Books neatly arranged on a shelf" loading="lazy">
+    <img class="management-image-small" src="https://images.unsplash.com/photo-1497366216548-37526070297c?auto=format&fit=crop&w=700&q=85" alt="A small stack of books" loading="lazy">
+    <span class="image-note">Double-check before you remove</span>
+  </div>
+</section>
+</main>
+<footer class="site-footer">
+  <div><a class="brand footer-brand" href="index.html"><span class="brand-name">Vyshnavi</span><span class="brand-subtitle">BOOKS &amp; BEYOND</span></a><p>A little world made of words.</p></div>
+  <div class="footer-links"><a href="books.html">Browse Books</a><a href="about.html">About Us</a><a href="contact.html">Contact</a></div>
+  <p class="copyright">© 2026 Vyshnavi Books &amp; Beyond</p>
+</footer>
+</body>
+</html>

@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Update a Book | Vyshnavi Books & Beyond</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+  <script src="js/script.js" defer></script>
+</head>
+<body>
+<header class="site-header">
+  <a class="brand" href="index.html"><span class="brand-name">Vyshnavi</span><span class="brand-subtitle">BOOKS &amp; BEYOND</span></a>
+  <button class="menu-toggle" aria-label="Toggle navigation">☰</button>
+  <nav class="main-nav">
+    <a href="index.html">Home</a><a href="books.html">Books</a><a href="add-book.html">Add Book</a>
+    <a href="update-book.html">Update</a><a href="delete-book.html">Delete</a><a href="about.html">About Us</a><a href="contact.html">Contact</a>
+  </nav>
+</header>
+<main>
+
+<section class="page-hero"><p class="eyebrow">KEEP YOUR SHELF UP TO DATE</p><h1>Update book details.</h1><p>Enter a Book ID and update its information.</p></section>
+<section class="form-section"><form class="form-card" id="updateBookForm"><div class="form-heading"><span class="form-icon">✎</span><div><h2>Edit a book</h2><p>Load the current details before editing.</p></div></div>
+<label>Book ID</label><input name="book_id" type="number" min="1" required><button class="btn btn-outline" id="loadBookButton" type="button">Load current details</button><p id="loadBookMessage" class="form-message"></p>
+<label>Title</label><input name="title" required><label>Author</label><input name="author" required><label>Category</label><input name="category" required>
+<div class="form-row"><div><label>Price (₹)</label><input name="price" type="number" min="0" step="0.01" required></div><div><label>Stock</label><input name="stock" type="number" min="0" required></div></div>
+<button class="btn btn-primary form-submit">Save changes ↗</button><p id="updateBookMessage" class="form-message"></p></form></section>
+
+<section class="management-feature update-feature">
+  <div class="management-image-collage update-collage">
+    <img class="management-image-large" src="https://images.unsplash.com/photo-1494891848038-7bd202a2afeb?auto=format&fit=crop&w=1000&q=85" alt="Organised library shelves" loading="lazy">
+    <img class="management-image-small" src="https://images.unsplash.com/photo-1497366754035-f200968a6e72?auto=format&fit=crop&w=700&q=85" alt="A reader exploring a book" loading="lazy">
+    <span class="image-note">Small edits keep shelves accurate ✨</span>
+  </div>
+  <div class="management-feature-copy">
+    <p class="eyebrow">REFRESH THE DETAILS</p>
+    <h2>Keep every book's information up to date.</h2>
+    <p>Choose the correct Book ID and click <strong>Load current details</strong>. Review the existing information, make your changes and save. The same Book ID stays connected to that book record.</p>
+    <div class="management-points"><span>01 · Load the existing record</span><span>02 · Edit only what needs changing</span><span>03 · Save and check the Books page</span></div>
+    <a class="btn btn-outline" href="books.html">Browse before editing →</a>
+  </div>
+</section>
+</main>
+<footer class="site-footer">
+  <div><a class="brand footer-brand" href="index.html"><span class="brand-name">Vyshnavi</span><span class="brand-subtitle">BOOKS &amp; BEYOND</span></a><p>A little world made of words.</p></div>
+  <div class="footer-links"><a href="books.html">Browse Books</a><a href="about.html">About Us</a><a href="contact.html">Contact</a></div>
+  <p class="copyright">© 2026 Vyshnavi Books &amp; Beyond</p>
+</footer>
+</body>
+</html>
