@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Books | Vyshnavi Books & Beyond</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+  <script src="js/script.js" defer></script>
+</head>
+<body>
+<header class="site-header">
+  <a class="brand" href="index.html"><span class="brand-name">Vyshnavi</span><span class="brand-subtitle">BOOKS &amp; BEYOND</span></a>
+  <button class="menu-toggle" aria-label="Toggle navigation">☰</button>
+  <nav class="main-nav">
+    <a href="index.html">Home</a><a href="books.html">Books</a><a href="add-book.html">Add Book</a>
+    <a href="update-book.html">Update</a><a href="delete-book.html">Delete</a><a href="about.html">About Us</a><a href="contact.html">Contact</a>
+  </nav>
+</header>
+<main>
+
+<section class="page-hero"><p class="eyebrow">YOUR NEXT CHAPTER STARTS HERE</p><h1>Explore our collection.</h1><p>Find a book that speaks to you.</p></section>
+<section class="section"><div class="book-controls"><label class="search-box">⌕ <input id="searchInput" type="search" placeholder="Search title, author or ID"></label><select id="categoryFilter"><option value="all">All categories</option></select></div>
+<div class="section-heading compact-heading"><div><p class="eyebrow">THE BOOKSHELF</p><h2>Find your next favourite.</h2></div><span id="resultCount" class="result-count">Loading…</span></div><div class="book-grid full-book-grid" id="bookGrid"><p>Loading books…</p></div></section>
+
+
+
+<section class="section browse-intro">
+  <div class="browse-copy"><p class="eyebrow">THE JOY OF DISCOVERY</p><h2>One bookshelf. A thousand possibilities.</h2><p>Browse the books currently listed in our collection. Use the search box to find a title, author or Book ID, or choose a category to narrow down your results. Each book card displays its category, price and available stock.</p><p>Can’t find a title you are looking for? Check back as the collection grows, or use the Add Book page to add a new record to the bookstore database.</p></div>
+  <div class="browse-image-grid">
+    <img src="https://images.unsplash.com/photo-1543002588-bfa74002ed7e?auto=format&fit=crop&w=700&q=85" alt="Colourful books stacked together" loading="lazy">
+    <img src="https://images.unsplash.com/photo-1518378188025-22bd89516ee2?auto=format&fit=crop&w=700&q=85" alt="Tall bookshelves in a library" loading="lazy">
+    <img src="https://images.unsplash.com/photo-1532012197267-da84d127e765?auto=format&fit=crop&w=700&q=85" alt="Open book ready to read" loading="lazy">
+    <img src="https://images.unsplash.com/photo-1541963463532-d68292c34b19?auto=format&fit=crop&w=700&q=85" alt="Bookshop shelves" loading="lazy">
+  </div>
+</section>
+<section class="tip-strip"><span>✦</span><p><strong>Reader tip:</strong> Try searching a broad topic such as “fiction” or “programming”, then explore the titles that match your interests.</p></section>
+
+</main>
+<footer class="site-footer">
+  <div><a class="brand footer-brand" href="index.html"><span class="brand-name">Vyshnavi</span><span class="brand-subtitle">BOOKS &amp; BEYOND</span></a><p>A little world made of words.</p></div>
+  <div class="footer-links"><a href="books.html">Browse Books</a><a href="about.html">About Us</a><a href="contact.html">Contact</a></div>
+  <p class="copyright">© 2026 Vyshnavi Books &amp; Beyond</p>
+</footer>
+</body>
+</html>

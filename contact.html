@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact | Vyshnavi Books & Beyond</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+  <script src="js/script.js" defer></script>
+</head>
+<body>
+<header class="site-header">
+  <a class="brand" href="index.html"><span class="brand-name">Vyshnavi</span><span class="brand-subtitle">BOOKS &amp; BEYOND</span></a>
+  <button class="menu-toggle" aria-label="Toggle navigation">☰</button>
+  <nav class="main-nav">
+    <a href="index.html">Home</a><a href="books.html">Books</a><a href="add-book.html">Add Book</a>
+    <a href="update-book.html">Update</a><a href="delete-book.html">Delete</a><a href="about.html">About Us</a><a href="contact.html">Contact</a>
+  </nav>
+</header>
+<main>
+
+<section class="page-hero"><p class="eyebrow">LET'S START A CONVERSATION</p><h1>We'd love to hear from you.</h1><p>Share a suggestion, ask a question or tell us about a book you love.</p></section>
+<section class="contact-layout"><div class="contact-intro"><img src="https://images.unsplash.com/photo-1497633762265-9d179a990aa6?auto=format&fit=crop&w=1000&q=85" alt="Library shelves"><p class="eyebrow">OUR LITTLE BOOK CORNER</p><h2>Every reader belongs here.</h2><p>Have a book recommendation or feedback about our collection? Send a message using the form.</p><div class="contact-detail"><span>✉</span><div><strong>Email</strong><p>Add your bookstore email here</p></div></div><div class="contact-detail"><span>⌖</span><div><strong>Location</strong><p>Add your bookstore location here</p></div></div></div>
+<form class="form-card contact-form" id="contactForm"><div class="form-heading"><span class="form-icon">✉</span><div><h2>Send us a note</h2><p>We'd be happy to hear from you.</p></div></div><label>Your name</label><input name="name" required><label>Email address</label><input name="email" type="email" required><label>Subject</label><input name="subject" required><label>Your message</label><textarea name="message" rows="5" required></textarea><button class="btn btn-primary form-submit">Send message ↗</button><p id="contactMessage" class="form-message"></p></form></section>
+
+
+
+<section class="section contact-gallery-section">
+  <div class="section-heading"><div><p class="eyebrow">A PLACE FOR BOOK LOVERS</p><h2>Let’s keep the conversation going.</h2></div><p class="section-intro">Suggestions and thoughtful feedback help us make the bookstore more useful for every visitor.</p></div>
+  <div class="contact-gallery">
+    <img src="https://images.unsplash.com/photo-1519682337058-a94d519337bc?auto=format&fit=crop&w=900&q=85" alt="Books arranged on shelves" loading="lazy">
+    <img src="https://images.unsplash.com/photo-1516979187457-637abb4f9353?auto=format&fit=crop&w=900&q=85" alt="An open book on a desk" loading="lazy">
+    <img src="https://images.unsplash.com/photo-1495446815901-a7297e633e8d?auto=format&fit=crop&w=900&q=85" alt="Books ready to be explored" loading="lazy">
+  </div>
+</section>
+<section class="section faq-section">
+  <div class="section-heading"><div><p class="eyebrow">A FEW QUICK ANSWERS</p><h2>Frequently asked questions.</h2></div></div>
+  <div class="faq-grid">
+    <article><h3>How do I find a book?</h3><p>Open the Books page and search by book title, author, category or Book ID. You can also use the category dropdown to filter the list.</p></article>
+    <article><h3>Can I add a new book?</h3><p>Yes. Open Add Book and enter a unique Book ID along with the title, author, category, price and stock. The record is saved to the connected database.</p></article>
+    <article><h3>What if a book’s details are incorrect?</h3><p>Use Update, enter the Book ID, load the current details and save the corrected information.</p></article>
+    <article><h3>How can I share a suggestion?</h3><p>Fill in the contact form above with your name, email, subject and message. The form currently displays a confirmation on the website.</p></article>
+  </div>
+</section>
+
+</main>
+<footer class="site-footer">
+  <div><a class="brand footer-brand" href="index.html"><span class="brand-name">Vyshnavi</span><span class="brand-subtitle">BOOKS &amp; BEYOND</span></a><p>A little world made of words.</p></div>
+  <div class="footer-links"><a href="books.html">Browse Books</a><a href="about.html">About Us</a><a href="contact.html">Contact</a></div>
+  <p class="copyright">© 2026 Vyshnavi Books &amp; Beyond</p>
+</footer>
+</body>
+</html>
